@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/railis/morse_me_nicely"
 
   s.name = "morse_me_nicely"
-  s.version = "0.0.1"
+  s.version = "0.1.2"
   s.date = '2017-08-11'
   s.summary = "Morse Me Nicely!"
   s.description = "A simple gem to encode and obfuscate text input using morse code"
