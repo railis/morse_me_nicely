@@ -13,7 +13,6 @@ module MorseMeNicely
       else
         input_text = ask(set_color("Write the message:", Thor::Shell::Color::GREEN))
       end
-      puts input_text.chop
       encoded_text = MorseMeNicely::Processor::encode(input_text, options[:without_obfuscation])
       if options[:output_file]
         output_file = File.new(options[:output_file], "w+")
