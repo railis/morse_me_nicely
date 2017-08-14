@@ -21,7 +21,6 @@ module MorseMeNicely
     private
 
     def validate_input_text
-      raise InvalidInputError, "No text input found" unless @input_text.is_a?(String)
       invalid_characters = get_input_invalid_characters
       unless invalid_characters.empty?
         raise InvalidInputError, "Input text contains invalid characters: #{invalid_characters.join(" ")}"

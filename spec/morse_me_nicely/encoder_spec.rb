@@ -4,18 +4,6 @@ RSpec.describe MorseMeNicely::Encoder, "#encoded_input" do
 
   context "when input text is not valid" do
 
-    context "when input is not a string" do
-
-      subject do
-        described_class.new(true)
-      end
-
-      it "raises InvalidInput error" do
-        expect { subject.encoded_input }.to raise_error(MorseMeNicely::InvalidInputError, "No text input found")
-      end
-
-    end
-
     context "when input text contains ambiguous characters" do
 
       subject do
